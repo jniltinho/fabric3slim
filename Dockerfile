@@ -8,4 +8,5 @@ RUN set -x \
     && pip3 install --upgrade pip \
     && pip3 install fabric3 \
     && apk del .build-deps \
-    && mkdir /root/.ssh
+    && mkdir /root/.ssh \
+    && rm -rf /root/.cache
