@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM docker:stable-dind
 
 ENV TZ=America/Sao_Paulo
 ENV PYTHONUNBUFFERED=1
