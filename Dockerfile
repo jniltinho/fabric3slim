@@ -18,7 +18,7 @@ RUN set -x \
     && apk del .build-deps \
     && chmod +x /usr/local/bin/kubectl \
     && rm -rf /var/cache/apk/* \
-    && cd /usr/local/bin/
+    && cd /usr/local/bin/ \
     && unzip terraform.zip \
     && rm terraform.zip \
     && true
