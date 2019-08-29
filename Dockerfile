@@ -11,7 +11,7 @@ ADD https://storage.googleapis.com/kubernetes-release/release/v1.15.3/bin/linux/
 
 RUN set -x \
     && apk add --no-cache gzip tar zip bash python3 libffi openssl openssh ca-certificates tzdata curl wget git \
-    && apk add --no-cache coreutils whois sudo gnupg unzip libc6-compat which py-crcmod \
+    && apk add --no-cache coreutils whois sudo gnupg unzip libc6-compat which py-crcmod python \
     && apk add --no-cache --virtual .build-deps python3-dev musl-dev gcc libffi-dev openssl-dev make \
     && pip3 install --upgrade pip \
     && pip3 install fabric3 docker-compose awscli \
