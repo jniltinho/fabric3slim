@@ -14,4 +14,6 @@ RUN set -x \
     && rm -rf /root/.cache /tmp/* /src \
     && apk del .build-deps \
     && chmod +x /usr/local/bin/kubectl
+    && rm -rf /var/cache/apk/* \
+    && true
     
