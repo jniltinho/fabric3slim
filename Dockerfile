@@ -13,7 +13,7 @@ RUN set -x \
     && pip3 install fabric3 docker-compose \
     && rm -rf /root/.cache /tmp/* /src \
     && apk del .build-deps \
-    && chmod +x /usr/local/bin/kubectl
+    && chmod +x /usr/local/bin/kubectl \
     && rm -rf /var/cache/apk/* \
     && true
     
